@@ -1,6 +1,6 @@
 # Orb Project Template
 <!---
-[![CircleCI Build Status](https://circleci.com/gh/InfrastructureAsCode-ch/black-orb.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/InfrastructureAsCode-ch/black) [![CircleCI Orb Version](https://img.shields.io/badge/endpoint.svg?url=https://badges.circleci.io/orb/iac/black)](https://circleci.com/orbs/registry/orb/iac/black) [![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/InfrastructureAsCode-ch/black-orb/main/LICENSE) [![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
+[![CircleCI Build Status](https://circleci.com/gh/InfrastructureAsCode-ch/black-orb.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/InfrastructureAsCode-ch/black-orb) [![CircleCI Orb Version](https://img.shields.io/badge/endpoint.svg?url=https://badges.circleci.io/orb/iac/black)](https://circleci.com/orbs/registry/orb/iac/black) [![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/InfrastructureAsCode-ch/black-orb/main/LICENSE) [![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
 
 --->
 
@@ -17,7 +17,7 @@ Additional READMEs are available in each directory.
 
 ### How to Contribute
 
-We welcome [issues](https://github.com/InfrastructureAsCode-ch/black/issues) to and [pull requests](https://github.com/InfrastructureAsCode-ch/black/pulls) against this repository!
+We welcome [issues](https://github.com/InfrastructureAsCode-ch/black-orb/issues) to and [pull requests](https://github.com/InfrastructureAsCode-ch/black-orb/pulls) against this repository!
 
 ### How to Publish
 * Create and push a branch with your new features.
