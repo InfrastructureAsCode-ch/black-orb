@@ -23,7 +23,7 @@ parameters:
 steps:
   - checkout
   - python/install-packages:
-      args: black
+      args: --pre black
   - check:
       path: << parameters.path >>
       diff: << parameters.diff >>

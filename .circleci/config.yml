@@ -28,7 +28,7 @@ jobs:
     steps:
       - checkout
       - python/install-packages:
-          args: black
+          args: --pre black
       - black/check:
           path: sample_files_formatted
 
@@ -37,7 +37,7 @@ jobs:
     steps:
       - checkout
       - python/install-packages:
-          args: black
+          args: --pre black
       - black/check:
           path: sample_files_unformatted
 
@@ -46,7 +46,7 @@ jobs:
     steps:
       - checkout
       - python/install-packages:
-          args: black
+          args: --pre black
       - black/format:
           path: sample_files_unformatted
       - black/check:

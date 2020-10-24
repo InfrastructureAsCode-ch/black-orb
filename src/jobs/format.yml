@@ -19,7 +19,7 @@ parameters:
 steps:
   - checkout
   - python/install-packages:
-      args: black
+      args: --pre black
   - format:
       path: << parameters.path >>
       verbose: << parameters.verbose >>
