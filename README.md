@@ -1,8 +1,6 @@
 # Orb Project Template
-<!---
-[![CircleCI Build Status](https://circleci.com/gh/InfrastructureAsCode-ch/black-orb.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/InfrastructureAsCode-ch/black-orb) [![CircleCI Orb Version](https://img.shields.io/badge/endpoint.svg?url=https://badges.circleci.io/orb/iac/black)](https://circleci.com/orbs/registry/orb/iac/black) [![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/InfrastructureAsCode-ch/black-orb/main/LICENSE) [![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
 
---->
+[![CircleCI Build Status](https://circleci.com/gh/InfrastructureAsCode-ch/black-orb.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/InfrastructureAsCode-ch/black-orb) [![CircleCI Orb Version](https://img.shields.io/badge/endpoint.svg?url=https://badges.circleci.io/orb/iac/black)](https://circleci.com/orbs/registry/orb/iac/black) [![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/InfrastructureAsCode-ch/black-orb/main/LICENSE) [![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
 
 A starter template for orb projects. Build, test, and publish orbs automatically on CircleCI with [Orb-Tools](https://circleci.com/orbs/registry/orb/circleci/orb-tools).
 
