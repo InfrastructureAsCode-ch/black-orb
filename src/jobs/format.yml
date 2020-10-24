@@ -20,7 +20,6 @@ steps:
   - checkout
   - python/install-packages:
       args: black
-      pkg-manager: pip
   - format:
       path: << parameters.path >>
       verbose: << parameters.verbose >>

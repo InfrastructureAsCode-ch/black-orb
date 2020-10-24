@@ -29,7 +29,6 @@ jobs:
       - checkout
       - python/install-packages:
           args: black
-          pkg-manager: pip
       - black/check:
           path: sample_files_formatted
 
@@ -39,7 +38,6 @@ jobs:
       - checkout
       - python/install-packages:
           args: black
-          pkg-manager: pip
       - black/check:
           path: sample_files_unformatted
 
@@ -49,7 +47,6 @@ jobs:
       - checkout
       - python/install-packages:
           args: black
-          pkg-manager: pip
       - black/format:
           path: sample_files_unformatted
       - black/check:

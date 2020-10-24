@@ -24,7 +24,6 @@ steps:
   - checkout
   - python/install-packages:
       args: black
-      pkg-manager: pip
   - check:
       path: << parameters.path >>
       diff: << parameters.diff >>
