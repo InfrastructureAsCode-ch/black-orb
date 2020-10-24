@@ -38,7 +38,7 @@ jobs:
       - run: pip install black
       - black/check:
           # little hack for negative test
-          path: "sample_files_unformatted ; if [[ $? -eq 1 ]]; then echo true; else false; fi"
+          path: "sample_files_unformatted || retCode=$?; if [[ $retCode -eq 1 ]]; then true; else false; fi"
 
   integration-test-format-and-check:
     executor: python/default
