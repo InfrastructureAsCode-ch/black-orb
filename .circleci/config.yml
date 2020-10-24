@@ -37,17 +37,8 @@ jobs:
       - checkout
       - run: pip install black
       - black/check:
-          path: sample_files_unformatted
-      - run:
-          name: check failes as expected
-          command: |
-            exit 0
-          when: on_fail
-      - run:
-          name: failed because check did return exit code 0
-          command: |
-            echo "Check unformatted did not fail"
-            exit 1
+          # little hack for negative test
+          path: "sample_files_unformatted ; if [[ $? -eq 1 ]]; then echo true; else false; fi"
 
   integration-test-format-and-check:
     executor: python/default
