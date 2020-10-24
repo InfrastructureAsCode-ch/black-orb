@@ -35,7 +35,7 @@ jobs:
     executor: python/default
     steps:
       - checkout
-      - pip install black
+      - run: pip install black
       - black/check:
           path: sample_files_unformatted
 
