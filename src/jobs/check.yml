@@ -1,0 +1,32 @@
+description: >
+  Check if python files are formatted
+
+executor: default
+
+parameters:
+  path:
+    type: string
+    default: "."
+    description: "Path to file[s]"
+  diff:
+    type: boolean
+    default: false
+    description: Show diff
+  verbose:
+    type: boolean
+    default: false
+    description: Also emit messages to stderr about files that were not changed
+  quiet:
+    type: boolean
+    default: false
+    description: Don't emit non-error messages to stderr. Errors are still emitted.
+steps:
+  - checkout
+  - python/install-packages:
+      args: black
+      pkg-manager: pip
+  - check:
+      path: << parameters.path >>
+      diff: << parameters.diff >>
+      verbose: << parameters.verbose >>
+      quiet: << parameters.quiet >>

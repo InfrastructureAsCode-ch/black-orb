@@ -1,13 +1,10 @@
 description: >
-  Sample example description.
-# Provide a use-case based example for using this orb.
-# Everything in the `usage` section will be displayed in the orb registry.
-# Comments are not retained.
+  Simple check if python files are already formatted.
 usage:
   version: 2.1
   orbs:
-    <orb-name>: <namespace>/<orb-name>@1.2.3
+    black: iac/black@1.2.3
   workflows:
     use-my-orb:
       jobs:
-        - <orb-name>/<job-name>
+        - black/check

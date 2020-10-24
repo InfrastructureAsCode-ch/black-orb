@@ -1,0 +1,22 @@
+description: >
+  Check if files would be formatted by Black
+
+parameters:
+  path:
+    type: string
+    default: "."
+    description: "Path to file[s]"
+  diff:
+    type: boolean
+    default: false
+    description: Show diff
+  verbose:
+    type: boolean
+    default: false
+    description: Also emit messages to stderr about files that were not changed
+  quiet:
+    type: boolean
+    default: false
+    description: Don't emit non-error messages to stderr. Errors are still emitted.
+steps:
+  - run: black --check <<# parameters.diff >>--diff <</ parameters.diff >><<# parameters.verbose >>--verbose <</ parameters.verbose >><<# parameters.quiet >>--quiet <</ parameters.quiet >><< parameters.path >>
