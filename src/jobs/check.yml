@@ -22,8 +22,7 @@ parameters:
     description: Don't emit non-error messages to stderr. Errors are still emitted.
 steps:
   - checkout
-  - python/install-packages:
-      args: --pre black
+  - run: pip install black
   - check:
       path: << parameters.path >>
       diff: << parameters.diff >>

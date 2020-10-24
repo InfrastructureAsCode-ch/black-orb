@@ -27,8 +27,7 @@ jobs:
     executor: python/default
     steps:
       - checkout
-      - python/install-packages:
-          args: --pre black
+      - run: pip install black
       - black/check:
           path: sample_files_formatted
 
@@ -36,8 +35,7 @@ jobs:
     executor: python/default
     steps:
       - checkout
-      - python/install-packages:
-          args: --pre black
+      - pip install black
       - black/check:
           path: sample_files_unformatted
 
@@ -45,8 +43,7 @@ jobs:
     executor: python/default
     steps:
       - checkout
-      - python/install-packages:
-          args: --pre black
+      - run: pip install black
       - black/format:
           path: sample_files_unformatted
       - black/check:
