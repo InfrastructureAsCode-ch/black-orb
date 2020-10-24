@@ -4,6 +4,7 @@ orbs:
   # Replace this with your own!
   black: iac/black@<<pipeline.parameters.dev-orb-version>>
   orb-tools: circleci/orb-tools@10.0
+  python: circleci/python@1.2.0 
 
 # Pipeline Parameters
 ## These parameters are used internally by orb-tools. Skip to the Jobs section.
